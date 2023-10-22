@@ -11,7 +11,7 @@ function handleSubmit(event) {
         password: password.value,
     };
 
-    if (email.value === '' || password.value === '') {
+    if (email.value.trim() === '' || password.value === '') {
         alert('Ой! Щось пішло не так! Ви точно заповнили всі поля?')
     } else { 
         console.log(user);
