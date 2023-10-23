@@ -12,8 +12,9 @@ const destroytBtn = document.querySelector('button[data-destroy]');
 createBtn.addEventListener('click', createBoxes);
 destroytBtn.addEventListener('click', destroyBoxes);
 
-function createBoxes(amount) { 
+function createBoxes(amount) {
   amount = inputNumber.value;
+  divBox.innerHTML = '';
   for (let i = 0; i < amount; i++) {
     const randomColor = getRandomHexColor();
     const itemBox = document.createElement('div');

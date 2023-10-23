@@ -15,8 +15,7 @@ function handleSubmit(event) {
         alert('Ой! Щось пішло не так! Ви точно заповнили всі поля?')
     } else { 
         console.log(user);
+        event.currentTarget.reset();
         alert('Дякую. Віші дані прийняті. Залишайтесь на місці, за Вами вже виїхали.');
-    };
-
-    event.currentTarget.reset();
+    };    
 };
